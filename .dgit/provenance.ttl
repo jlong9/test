@@ -8,7 +8,28 @@
 
 <file://home/judy/Desktop/testingz> a git:repository,
         prov:Collection ;
+    git:hadLogMember <http://example.com/object/commit/b285785c4bf2358844ee01f8ee5c5856fd34a307> ;
     prov:GeneratedAtTime "2013-07-22T16:43:13-0400" ;
-    prov:atLocation "/home/judy/Desktop/testingz" .
+    prov:atLocation "/home/judy/Desktop/testingz" ;
+    prov:hadMember <http://example.com/object/blob/56444da4933a1fa133a711b416bb17b1c8ef0fe6>,
+        <http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> .
+
+<http://example.com/object/blob/56444da4933a1fa133a711b416bb17b1c8ef0fe6> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/b285785c4bf2358844ee01f8ee5c5856fd34a307> ;
+    prov:atLocation "/home/judy/Desktop/testingz/.dgit/provenance.ttl" ;
+    foaf:name "provenance.ttl" .
+
+<http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/b285785c4bf2358844ee01f8ee5c5856fd34a307> ;
+    prov:atLocation "/home/judy/Desktop/testingz/readtest.txt" ;
+    foaf:name "readtest.txt" .
+
+<http://example.com/object/commit/b285785c4bf2358844ee01f8ee5c5856fd34a307> a git:commit,
+        prov:Entity ;
+    rdfs:comment "hi india" ;
+    prov:GeneratedAtTime "2013-07-22T16:44:53-0400" ;
+    prov:wasAttributedTo "judy" .
 
 
