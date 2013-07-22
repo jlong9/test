@@ -1,0 +1,14 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix git: <http://www.example.com/ns/#> .
+@prefix prov: <http://www.w3.org/prov/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file://home/judy/Desktop/testingz> a git:repository,
+        prov:Collection ;
+    prov:GeneratedAtTime "2013-07-22T16:43:13-0400" ;
+    prov:atLocation "/home/judy/Desktop/testingz" .
+
+
